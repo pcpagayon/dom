@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    
+<div id="elem">
+    <div id="elem-content">Element</div>
+</div>
+
+<!-- <script>
+    let elem = document.getElementById("elem");
+    elem.style.background = `red`;
+</script> -->
+
+<script>
+    let p = document.createElement('p')
+
+    p.className = `alert alert-warning`;
+    p.innerHTML = `<em>lorem ipsum</em>`;
+    // p.innerHTML.style.background = `yellow`;
+    document.body.appendChild(p);
+
+    let clear = (p) => (
+        p.innerHTML = ""
+    )
+
+    // document.body.removeChild(p)
+
+   
+</script>
+
+</body>
+</html>
